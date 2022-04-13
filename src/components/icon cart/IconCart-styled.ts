@@ -7,6 +7,7 @@ export const ContainerIconCart = styled.div`
     position: relative;
     
     .quantity-itens{
+        cursor: pointer;
         position: absolute;
         right: -2px;
         top: 5px;
@@ -19,5 +20,6 @@ export const ContainerIconCart = styled.div`
         place-items: center;
         border-radius: 50%;
         font-weight: 600;
+        user-select: none;
     }
 `
