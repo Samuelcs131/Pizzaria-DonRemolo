@@ -1,0 +1,123 @@
+import styled from "styled-components";
+import { themeLight } from "../../styles/PalletColors";
+
+type tColorMenu = {
+    colorMenu: string,
+}
+
+export const MenuContainer = styled.div<tColorMenu>`
+    //position: relative;
+    grid-area: menu;
+
+    .menu-container{
+        position: absolute;
+        left: 0;
+        width: 90px;
+        height: 100vh;
+        padding-left: 25px;
+        background-color: ${themeLight.gray300};
+        display: flex;
+        flex-direction: column; 
+        transition: linear .3s;
+        overflow: hidden;
+        
+
+        /* CONTAINER LOGO AND MENU */
+        .container-logo-and-menu{ 
+            width: 100%; 
+            user-select: none;
+            margin: 15px 0;
+            margin-bottom: 50px; 
+
+        /* LOGO */
+        .logo-menu {
+            display: none; 
+        }
+        /* ICON HAMBURGUER */
+        .icon-menu {
+            cursor: pointer;
+            div{
+                width: 30px;
+                height: 4px;
+                background-color: ${themeLight.gray600};
+                margin: 6px;
+                transition: .3s;
+                border-radius: 10px;
+            }
+            .l-3:nth-child(3){
+                width: 17px;
+            }
+        } 
+}
+        /* MENU LIST */
+        .menu-list{
+            width: 100%;
+
+            ul {
+                padding-left: 5px; 
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                
+                .item-menu{ 
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    user-select: none;
+                    height: 50px;
+  
+                    span {
+                        display: none;
+                        position: absolute;
+                        left: 40px;
+                        margin-left: 40px;
+                        font-weight: 700;
+                        color: ${themeLight.gray600};
+                    }
+                }
+                .item-menu.active{
+                    svg path{
+                        fill: ${props=>props.colorMenu};
+                    }
+
+                    &::before{
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    height: 100%;
+                    width: 5px;
+                    border-radius: 10px;
+                    background-color: ${props=>props.colorMenu};
+                }
+                }
+                
+            }
+           
+        }
+    }
+
+
+    /* MENU ACTIVE */
+    .menu-container.active{
+    width: 342px;
+
+        /* ICON MENU */
+        .icon-menu {
+            .l-1{ transform: rotate(-45deg) translate(0px, 8px); width: 15px;}
+            .l-2{ opacity: 0; }
+            .l-3{ transform: rotate(45deg) translate(0px, -7px); width: 15px;}
+        }
+
+        /* MENU LIST */
+        .menu-list{
+            ul {
+                .item-menu{ 
+                    span {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+`
+ 
