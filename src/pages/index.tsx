@@ -3,7 +3,7 @@ import { useState } from 'react'
 import CardProduct from '../components/card product/CardProduct'
 import Content from '../components/content/Content'
 import HeadPage from '../components/HeadPage' 
-import IconCart from '../components/icon cart/IconCart'
+import IconCart from '../components/cart/IconCart'
 import NavCategories from '../components/navegation categories/NavCategorias'
 import Search from '../components/search/Search'
 import { Header } from '../styles/Header'
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-    <HeadPage titlePage="Home"/>
+    <HeadPage titlePage="Home - Pizzaria Don Remolo"/>
       <Content>
         
         <Header style={{marginBottom: '40px'}}>
@@ -26,8 +26,8 @@ const Home: NextPage = () => {
           <h2>Categorias</h2>
           <p>Elige nuestras deliciosas pizzas </p>
         </TitleAndText>
-        <NavCategories/>
-        <CardProduct/>
+        <NavCategories />
+        <CardProduct /> 
 
       </Content>
     </>

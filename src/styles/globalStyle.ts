@@ -23,25 +23,4 @@ export default createGlobalStyle`
     body {
         overflow-x: hidden;
     }
-
-    /* SELECT TEXT */
-    ::selection {
-        background: rgba(0, 217, 255, 0.411);
-        color: white;
-    }
-
-    /* SCROLL */
-    ::-webkit-scrollbar{
-        width: 6px;
-        
-    }
-    ::-webkit-scrollbar-track{
-        background-color: black;
-    }
-
-    ::-webkit-scrollbar-thumb{
-        background-color: rgba(212, 212, 212, 0.582);
-        border-radius: 5px;
-    }
-
 `

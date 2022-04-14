@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { themeLight } from "../../styles/PalletColors";
 
 export const ContainerCardProduct = styled.div` 
-    width: 100%;
-    height: 600px;
+    width: 100%; 
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
     gap: 30px;
-
+    grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    
     .card{ 
         height: 263px; 
         box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);

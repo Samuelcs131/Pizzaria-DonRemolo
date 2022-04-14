@@ -1,19 +1,19 @@
 import styled from "styled-components";
-import { themeLight } from "../../styles/PalletColors";
 
 export const ContainerNavCategories = styled.nav`
     padding: 10px 0;
     overflow-x: auto;
     overflow-y: hidden;
+    margin-bottom: 30px; 
+    flex-shrink: 0;
     
     ul{
-        border-bottom: 3px solid ${themeLight.gray300};
+        
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 50px;
         gap: 30px;
-        margin-bottom: 30px;
         
         .item-nav{
             display: flex;
@@ -40,5 +40,25 @@ export const ContainerNavCategories = styled.nav`
                 border-radius: 30px;
             }
         }
+    }
+
+    /* SELECT TEXT */
+    ::selection {
+        background: rgba(0, 217, 255, 0.411);
+        color: white;
+    }
+
+    /* SCROLL */
+    ::-webkit-scrollbar{
+        height: 6px;
+        
+    }
+    ::-webkit-scrollbar-track{
+        background-color: white;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(212, 212, 212, 0.582);
+        border-radius: 5px;
     }
 `

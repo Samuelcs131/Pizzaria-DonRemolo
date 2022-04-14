@@ -4,8 +4,7 @@ import { MenuContainer } from "./Menu-style";
 import { useRef, useState } from "react";
 
 const Menu = () => {
-    const containerMenu = useRef<HTMLDivElement>(null)
-    
+    const containerMenu = useRef<HTMLDivElement>(null) 
 
     const [colorMenu, setcolorMenu] = useState<string>('#FF4E4E');
 
