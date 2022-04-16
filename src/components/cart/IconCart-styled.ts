@@ -33,7 +33,7 @@ export const ContainerCart = styled.div`
         position: fixed;
         padding: 25px;
         top: 0px; 
-        right: -470px;
+        right: -780px;
         z-index: 1001;
         background-color: #F6F6F6;
         width: 440px;
@@ -175,7 +175,7 @@ export const ContainerCart = styled.div`
        /* CART SIDEBAR */
         .cart-sidebar{
             width: 100%;
-            right: -780px;
+            
         }
     }
 `
