@@ -1,6 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"; 
+import { iColorMain } from "../../types/interfaces";
 
-export const ContainerNavCategories = styled.nav`
+
+
+export const ContainerNavCategories = styled.nav<iColorMain>`
     padding: 10px 0;
     overflow-x: auto;
     overflow-y: hidden;
@@ -19,16 +22,24 @@ export const ContainerNavCategories = styled.nav`
             display: flex;
             align-items: center;
             cursor: pointer;
-            
+            user-select: none;
+
+            svg path {
+                fill: ${({theme})=>theme.text.primary};
+            }
+
             span{
                 margin-left: 20px;
                 font-weight: 600;
                 font-size: 18px;
+                color: ${({theme})=>theme.text.primary};
             }
         }
 
         .item-nav.active{
             position: relative;
+            svg path{ fill: ${({colorMain})=>colorMain}; }
+            span{ color: ${({colorMain})=>colorMain}; }
             &::before{
                 content: '';
                 position: absolute;
@@ -36,7 +47,7 @@ export const ContainerNavCategories = styled.nav`
                 left: 0;
                 width: 100%;
                 height: 3px;
-                background-color: black;
+                background-color: ${({colorMain})=>colorMain};
                 border-radius: 30px;
             }
         }

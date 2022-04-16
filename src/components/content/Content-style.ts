@@ -9,4 +9,11 @@ export const ContainerContent = styled.main`
     height: 100vh;
     padding: 20px 45px;
     overflow-x: hidden;
+
+    
+    @media screen and (max-width: 767px) {
+        margin-left: 60px;
+        padding: 20px 25px;
+    }
+
 `

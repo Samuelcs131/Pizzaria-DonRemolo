@@ -1,7 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
+import { iThemeColor } from '../types/interfaces';
 
-export default createGlobalStyle`
+interface iGlobalStyle {
+    theme: iThemeColor
+}
 
+export default createGlobalStyle<iGlobalStyle>` 
     *{
         box-sizing: border-box;
         margin: 0;
@@ -22,5 +26,6 @@ export default createGlobalStyle`
 
     body {
         overflow-x: hidden;
+        background-color: ${({theme})=>theme.background.primary};
     }
 `

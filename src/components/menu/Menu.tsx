@@ -1,12 +1,14 @@
 import Link from "next/link"
 import Image from "next/image"
 import { MenuContainer } from "./Menu-style";
-import { useRef, useState } from "react";
+import { useContext, useRef, useState } from "react";
+import { DataContext } from "../../store/GlobalState";
 
 const Menu = () => {
-    const containerMenu = useRef<HTMLDivElement>(null) 
 
-    const [colorMenu, setcolorMenu] = useState<string>('#FF4E4E');
+    const containerMenu = useRef<HTMLDivElement>(null) 
+ 
+    const { state } = useContext(DataContext)
 
     function activeMenu(){
         containerMenu.current?.classList.toggle('active')
@@ -14,7 +16,7 @@ const Menu = () => {
 
     return(
 
-        <MenuContainer colorMenu={colorMenu}>
+        <MenuContainer colorMain={state.themePage.colorMain}>
             <div ref={containerMenu} className="menu-container">
 
                 <div className="container-logo-and-menu">

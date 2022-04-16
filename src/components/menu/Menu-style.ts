@@ -1,11 +1,7 @@
 import styled from "styled-components";
-import { themeLight } from "../../styles/PalletColors";
+import { iMenuContainer } from "../../types/interfaces"; 
 
-type tColorMenu = {
-    colorMenu: string,
-}
-
-export const MenuContainer = styled.div<tColorMenu>`
+export const MenuContainer = styled.div<iMenuContainer>`
 
 .menu-container{
         display: flex;
@@ -13,13 +9,14 @@ export const MenuContainer = styled.div<tColorMenu>`
         justify-content: space-between;
         height: 100vh;
         width: 90px; 
-        background-color: ${themeLight.gray300};
+        background-color: ${({theme})=>theme.background.secundary};
         flex-shrink: 0;
-        transition-duration:   .25s;
+        transition-duration: .25s;
         transition-property: width; 
         transition-timing-function: linear;
         align-items: center;
         overflow: hidden;
+        z-index: 1000;
     }
 
     /* LOGO AND MENU */
@@ -41,7 +38,7 @@ export const MenuContainer = styled.div<tColorMenu>`
             span{
                 width: 135px;
                 font-weight: 800;
-                color: ${themeLight.red500};
+                color: ${({theme})=>theme.sunsetOrange500};
                 margin-left: 14px;
                 font-size: 16px;
                 line-height: 15px;
@@ -56,7 +53,7 @@ export const MenuContainer = styled.div<tColorMenu>`
             div{
                 width: 30px;
                 height: 4px;
-                background-color: ${themeLight.gray600};
+                background-color: ${({theme})=>theme.text.secundary};
                 margin: 6px;
                 transition: .3s;
                 border-radius: 10px;
@@ -93,19 +90,25 @@ export const MenuContainer = styled.div<tColorMenu>`
                     svg{
                         flex-shrink: 0;
                         width: 45px;
+                        path{
+                            fill: ${({theme})=>theme.text.secundary};
+                        }
                     }
                     span{
                         margin-left: 20px;
                         display: none;
+                        color: ${({theme})=>theme.text.secundary};
                     }
                 }
                 /* MENU LIST ACTIVE */
                 .item-menu.active{
                     position: relative;
-                    color: ${props=>props.colorMenu};
+                    span{
+                        color: ${({colorMain})=>colorMain};
+                    }
 
                     svg path{ 
-                        fill: ${props=>props.colorMenu};
+                        fill: ${({colorMain})=>colorMain};
                     }
                     &::before{
                         content: '';
@@ -114,7 +117,7 @@ export const MenuContainer = styled.div<tColorMenu>`
                         height: 100%;
                         width: 5px;
                         border-radius: 10px;
-                        background-color: ${props=>props.colorMenu};
+                        background-color: ${({colorMain})=>colorMain};
                     }
                 }
             }
@@ -129,6 +132,7 @@ export const MenuContainer = styled.div<tColorMenu>`
             flex-shrink: 0;
             font-size: 14px;
             user-select: none;
+            color: ${({theme})=>theme.text.secundary};
         }
     }
 
@@ -166,5 +170,23 @@ export const MenuContainer = styled.div<tColorMenu>`
             .footer-menu{
                 display: flex;
             }
+    }
+
+    @media screen and (max-width: 767px) {
+        .menu-container{
+            position: absolute;
+
+            width: 60px;
+            .container-logo-and-menu{
+                padding: 5px;
+            }
+
+            .menu-list{
+                ul li{
+                    padding: 0 7px;
+                }
+            }
+        }
+        
     }
 `
