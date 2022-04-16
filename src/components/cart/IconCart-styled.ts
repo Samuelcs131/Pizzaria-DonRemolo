@@ -175,6 +175,7 @@ export const ContainerCart = styled.div`
        /* CART SIDEBAR */
         .cart-sidebar{
             width: 100%;
+            right: -780px;
         }
     }
 `
