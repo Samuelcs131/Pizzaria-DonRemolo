@@ -3,15 +3,17 @@ export interface iGlobalState {
     themePage?: iThemePage,
     cart?: Array<iCart>,
 }
-
 export interface iThemePage {
     theme?: string, 
     colorMain?: string
 }
-
 export interface iCart {
     product?: string,
     price?: number,
+}
+export interface iDataContext {
+    state: iGlobalState,
+    dispatch: any
 }
 /* COLOR PALLET ----------------------------------- */
 export interface iThemeColor {
@@ -35,9 +37,9 @@ export interface iCardProduct {
     colorMain: string
 }
 export interface iMenuContainer {
-    colorMain: string
+    colorMain: string | undefined
 }
-export interface ColorMain {
+export interface iColorMain {
     colorMain: string
 }
 export interface iIconCart {

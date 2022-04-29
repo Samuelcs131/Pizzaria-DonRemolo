@@ -1,25 +1,32 @@
 import Link from "next/link"
 import Image from "next/image"
 import { MenuContainer } from "./Menu-style";
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef } from "react";
 import { DataContext } from "../../store/GlobalState";
 import { useRouter } from "next/router";
+import { iDataContext } from "../../types/interfaces";
 
 const Menu = () => {
 
     const myRouter = useRouter().pathname
 
-    const containerMenu = useRef<HTMLDivElement>(null) 
+    const containerMenu = useRef<HTMLDivElement>(null)
  
-    const { state } = useContext(DataContext)
+    const { state, dispatch } = useContext<iDataContext>(DataContext)
 
     function activeMenu(){
         containerMenu.current?.classList.toggle('active')
     }
+    
+    useEffect(()=>{
+        if(myRouter !== '/') dispatch({type: 'theme', payload: { 
+            theme: state.themePage?.theme, colorMain: '#FF4E4E'
+        }})
+    })
 
     return(
 
-        <MenuContainer colorMain={state.themePage.colorMain}>
+        <MenuContainer colorMain={state.themePage?.colorMain}>
             <div ref={containerMenu} className="menu-container">
 
                 <div className="container-logo-and-menu">

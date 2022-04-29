@@ -7,11 +7,10 @@ export const ContainerNavCategories = styled.nav<iColorMain>`
     padding: 10px 0;
     overflow-x: auto;
     overflow-y: hidden;
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     flex-shrink: 0;
     
     ul{
-        
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -52,24 +51,18 @@ export const ContainerNavCategories = styled.nav<iColorMain>`
             }
         }
     }
-
-    /* SELECT TEXT */
-    ::selection {
-        background: rgba(0, 217, 255, 0.411);
-        color: white;
-    }
+ 
 
     /* SCROLL */
     ::-webkit-scrollbar{
         height: 6px;
-        
     }
     ::-webkit-scrollbar-track{
-        background-color: white;
+        background-color: transparent;
     }
 
     ::-webkit-scrollbar-thumb{
-        background-color: rgba(212, 212, 212, 0.582);
+        background-color: ${({theme})=>theme.text.secundary};
         border-radius: 5px;
     }
 `

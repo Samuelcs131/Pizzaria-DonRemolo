@@ -22,11 +22,9 @@ const NavCategories = () => {
         /* CHANGE COLOR */
         const colorsNav: Array<string> = ['#FF4E4E','#FFA73F','#50C2E6','#FF678C'] 
 
-        dispatch( 
-             {   
-                type: 'theme', 
-                payload: { theme: state.themePage.theme, colorMain: colorsNav[index] }
-            })
+        dispatch({type: 'theme', payload: { 
+            theme: state.themePage.theme, colorMain: colorsNav[index] 
+        } })
     }
 
     return(
