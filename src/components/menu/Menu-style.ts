@@ -38,7 +38,7 @@ export const MenuContainer = styled.div<iMenuContainer>`
             span{
                 width: 135px;
                 font-weight: 800;
-                color: ${({theme})=>theme.sunsetOrange500};
+                color: #FF4E4E;
                 margin-left: 14px;
                 font-size: 16px;
                 line-height: 15px;

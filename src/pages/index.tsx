@@ -22,11 +22,14 @@ const Home: NextPage = () => {
           <Search setProps={setDataForm} />
           <IconCart/>
         </Header>
-        <TitleAndText style={{marginBottom: '30px'}}>
-          <h2>Categorias</h2>
-          <p>Elige nuestras deliciosas pizzas </p>
-        </TitleAndText>
+
+          <TitleAndText style={{marginBottom: '30px'}}>
+            <h2>Categorias</h2>
+            <p>Elige nuestras deliciosas pizzas </p>
+          </TitleAndText>
+
         <NavCategories />
+        
         <CardProduct /> 
 
       </Content>

@@ -1,9 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { iThemeColor } from '../types/interfaces';
-
-interface iGlobalStyle {
-    theme: iThemeColor
-}
+import { iGlobalStyle } from '../types/interfaces'; 
 
 export default createGlobalStyle<iGlobalStyle>` 
     *{

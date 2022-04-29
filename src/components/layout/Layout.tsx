@@ -5,7 +5,7 @@ import { ContainerLayout } from "./Layout-style";
 import { ThemeProvider } from 'styled-components'
 import { themeDark } from "../../styles/PalletColors";
 import { themeLight } from "../../styles/PalletColors";
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { DataContext } from "../../store/GlobalState";
 
 const Layout = ({children}:tChildrenProps) => {

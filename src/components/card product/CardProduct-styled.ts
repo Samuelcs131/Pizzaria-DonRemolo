@@ -17,7 +17,7 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        background-color: ${({theme})=>theme.background.secundary};
+        background-color: ${({theme})=>theme.background.tertiary};
         border: 1px solid ${({theme})=>theme.background.secundary};
 
         img{

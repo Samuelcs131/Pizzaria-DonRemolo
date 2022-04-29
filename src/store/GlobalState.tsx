@@ -8,7 +8,7 @@ const DataContext = createContext<any>({});
 
 // VALOR INICIAL
 const INITIAL_STATE: iGlobalState = {
-    themePage: { theme: 'light', colorMain: '#FF4E4E'}
+    themePage: { theme: 'dark', colorMain: '#FF4E4E'}
 }
 
 // UM COMPONENTE QUE VAI PASSAR OS VALORES PARA OS FILHOS

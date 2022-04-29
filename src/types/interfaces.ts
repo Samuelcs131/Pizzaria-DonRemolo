@@ -14,6 +14,11 @@ export interface iCart {
     price?: number,
 }
 /* COLOR PALLET ----------------------------------- */
+export interface iThemeColor {
+    background: iThemeBackgroundColor,
+    text: iThemeTextColor
+}
+
 export interface iThemeTextColor {
     primary: string,
     secundary: string,
@@ -22,34 +27,22 @@ export interface iThemeTextColor {
 export interface iThemeBackgroundColor {
     primary: string,
     secundary: string,
-}
-
-export interface iThemeColor {
-    background: iThemeBackgroundColor,
-    text: iThemeTextColor,
-    sunsetOrange600: string,
-    sunsetOrange500: string,
-    sunsetOrange400: string, 
-    yellowOrange600: string,
-    yellowOrange500: string,
-    yellowOrange400: string, 
-    pictonBlue600: string,
-    pictonBlue500: string,
-    pictonBlue400: string,
-    brinkPink600: string,
-    brinkPink500: string,
-    brinkPink400: string
+    tertiary: string
 }
 
 /* COMPONENTS ----------------------------------- */
 export interface iCardProduct {
     colorMain: string
 }
-
 export interface iMenuContainer {
     colorMain: string
 }
-
-export interface iColorMain {
+export interface ColorMain {
     colorMain: string
+}
+export interface iIconCart {
+    theme: iThemeColor
+}
+export interface iGlobalStyle {
+    theme: iThemeColor
 }
