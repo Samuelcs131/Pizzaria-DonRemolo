@@ -2,12 +2,12 @@
     {
         "category": "pizza",
         "list":[
-            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
-            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
-            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+            {"name": "Mussareza","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
+            {"name": "Portuguesa","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Calabresa","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Calabresa com catupiry","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
+            {"name": "Marguerita","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Pepperoni","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
         ]
     },
     {

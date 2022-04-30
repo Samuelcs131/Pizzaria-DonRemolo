@@ -18,10 +18,12 @@ interface iHome {
 
 const Home: NextPage<iHome> = ( {productsData} ) => {
 
-  const [dataForm, setDataForm] = useState();
+  const [searchData, setSearchData] = useState<string>('');
   const [selectCategory, setSelectCategory] = useState<string>('pizza');
 
-  const products:Array<iListProducts> = productsData.filter( (item)=> item.category === selectCategory )[0].list
+  const category:Array<iListProducts> = productsData.filter( (item)=> item.category === selectCategory )[0].list
+
+  const products:Array<iListProducts> = category.filter( (item)=> (item.name).toLowerCase().includes(searchData))
 
   return (
     <>
@@ -29,7 +31,7 @@ const Home: NextPage<iHome> = ( {productsData} ) => {
       <Content>
         
         <Header style={{marginBottom: '40px'}}>
-          <Search setProps={setDataForm} />
+          <Search setProps={setSearchData} />
           <IconCart/>
         </Header>
 

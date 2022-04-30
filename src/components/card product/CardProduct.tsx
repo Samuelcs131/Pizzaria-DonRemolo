@@ -33,7 +33,7 @@ const CardProduct = ({ products }:iCardProduct): JSX.Element => {
         </div>
         )}))
         :
-        (<h4>Não há nada</h4>)
+        (<h4>Nenhum item encontrado</h4>)
         }
     </ContainerCardProduct>
     )

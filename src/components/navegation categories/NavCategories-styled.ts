@@ -55,7 +55,7 @@ export const ContainerNavCategories = styled.nav<iColorMain>`
 
     /* SCROLL */
     ::-webkit-scrollbar{
-        height: 6px;
+        height: 4px;
     }
     ::-webkit-scrollbar-track{
         background-color: transparent;

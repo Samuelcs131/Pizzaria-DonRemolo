@@ -9,7 +9,7 @@ const Search = ({setProps}:any ) => {
             </svg>
             </label>
 
-            <input type="text" id="search-input" onChange={(e)=>setProps(e.target.value)} placeholder="Buscar algo no menu..."/>
+            <input type="text" id="search-input" onChange={(e)=>setProps((e.target.value).toLowerCase())} placeholder="Buscar algo no menu..."/>
         </ContainerSearch>
     </>)
 }
