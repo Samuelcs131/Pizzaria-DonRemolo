@@ -1,4 +1,4 @@
-import type { NextPage } from 'next'
+import type { GetStaticProps, NextPage } from 'next'
 import { useState } from 'react'
 import CardProduct from '../components/card product/CardProduct'
 import Content from '../components/content/Content'
@@ -8,10 +8,20 @@ import NavCategories from '../components/navegation categories/NavCategorias'
 import Search from '../components/search/Search'
 import { Header } from '../styles/Header'
 import { TitleAndText } from '../styles/TitleAndText'
+import Products from '../../public/Products.json'
+import { iListProducts, iProducts } from '../types/interfaces' 
 
-const Home: NextPage = () => {
+
+interface iHome {
+  productsData: Array<iProducts>
+}
+
+const Home: NextPage<iHome> = ( {productsData} ) => {
 
   const [dataForm, setDataForm] = useState();
+  const [selectCategory, setSelectCategory] = useState<string>('pizza');
+
+  const products:Array<iListProducts> = productsData.filter( (item)=> item.category === selectCategory )[0].list
 
   return (
     <>
@@ -28,13 +38,20 @@ const Home: NextPage = () => {
             <p>Elige nuestras deliciosas pizzas </p>
           </TitleAndText>
 
-        <NavCategories />
+        <NavCategories setProps={setSelectCategory} />
         
-        <CardProduct /> 
+        <CardProduct products={products} />
 
       </Content>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+
+  const productsData:Array<iProducts> = Products
+
+  return { props: { productsData } }
 }
 
 export default Home

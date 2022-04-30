@@ -1,29 +1,21 @@
 import { useContext } from "react";
 import { DataContext } from "../../store/GlobalState";
+import { iListProducts } from "../../types/interfaces";
 import { ContainerCardProduct } from "./CardProduct-styled";
 
-const products:any = [
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'},
-    {name: 'Pizza muzzarella',price: 2000, img: 'https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'}
-]
+interface iCardProduct  {
+    products: Array<iListProducts>
+}
 
-const CardProduct = () => {
+const CardProduct = ({ products }:iCardProduct): JSX.Element => {
 
     const { state } = useContext(DataContext)
 
+    //console.log(products)
+ 
     return(
     <ContainerCardProduct colorMain={state.themePage.colorMain}>
-        {products.lenght !== 0 ? 
+        {products.length !== 0 ? 
         (products.map( (product: any, index:number) => {return(
         
         <div key={index} className="card">
@@ -46,5 +38,7 @@ const CardProduct = () => {
     </ContainerCardProduct>
     )
 }
+
+
 
 export default CardProduct;

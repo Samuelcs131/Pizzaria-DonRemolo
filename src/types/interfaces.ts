@@ -20,18 +20,15 @@ export interface iThemeColor {
     background: iThemeBackgroundColor,
     text: iThemeTextColor
 }
-
 export interface iThemeTextColor {
     primary: string,
     secundary: string,
 }
-
 export interface iThemeBackgroundColor {
     primary: string,
     secundary: string,
     tertiary: string
 }
-
 /* COMPONENTS ----------------------------------- */
 export interface iCardProduct {
     colorMain: string
@@ -48,3 +45,14 @@ export interface iIconCart {
 export interface iGlobalStyle {
     theme: iThemeColor
 }
+/* DATA ----------------------------------- */
+export interface iProducts {
+    category: string,
+    list: Array<iListProducts>
+}
+export interface iListProducts {
+    name: string,
+    price: number,
+    img: string
+}
+ 

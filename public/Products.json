@@ -1,0 +1,38 @@
+[
+    {
+        "category": "pizza",
+        "list":[
+            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
+            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
+            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Pizza","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+        ]
+    },
+    {
+        "category": "drink",
+        "list": [
+            {"name": "Refrigerante","price": 2000, "img": "https://images.pexels.com/photos/2668308/pexels-photo-2668308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
+            {"name": "Refrigerante","price": 2000, "img": "https://images.pexels.com/photos/764370/pexels-photo-764370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Refrigerante","price": 2000, "img": "https://images.pexels.com/photos/8679058/pexels-photo-8679058.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+        ]
+    },
+    {
+        "category":"dessert",
+        "list": [
+            {"name": "Doce","price": 2000, "img": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},
+            {"name": "Doce","price": 2000, "img": "https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
+            {"name": "Doce","price": 2000, "img": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"} 
+        ]
+    },
+    {
+        "category":"empanada",
+        "list": [
+            {"name": "Empanada","price": 2000, "img": "https://images.pexels.com/photos/8279712/pexels-photo-8279712.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
+            {"name": "Empanada","price": 2000, "img": "https://images.pexels.com/photos/5881022/pexels-photo-5881022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
+            {"name": "Sanduiche","price": 2000, "img": "https://images.pexels.com/photos/7499298/pexels-photo-7499298.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"} 
+        ]
+    }
+]
+

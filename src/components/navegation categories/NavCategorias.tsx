@@ -2,7 +2,11 @@ import { useContext, useRef } from "react";
 import { DataContext } from "../../store/GlobalState";
 import { ContainerNavCategories } from "./NavCategories-styled";
 
-const NavCategories = () => {
+interface iNavCategories {
+    setProps: Function
+}
+
+const NavCategories = ({setProps}: iNavCategories): JSX.Element => {
     const listNav = useRef<HTMLUListElement>(null)
     const { dispatch, state } = useContext(DataContext)
 
@@ -19,8 +23,12 @@ const NavCategories = () => {
         /* SELECT ONLY OPTION */ 
         childrenListNav[index].className = 'item-nav active'
 
+        /* SELECT CATEGORY */
+        const category:Array<string> = ['pizza','empanada','drink','dessert']
+        setProps(category[index])
+
         /* CHANGE COLOR */
-        const colorsNav: Array<string> = ['#FF4E4E','#FFA73F','#50C2E6','#FF678C'] 
+        const colorsNav: Array<string> = ['#FF4E4E','#FFA73F','#50C2E6','#FF678C']
 
         dispatch({type: 'theme', payload: { 
             theme: state.themePage.theme, colorMain: colorsNav[index] 
