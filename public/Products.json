@@ -2,28 +2,29 @@
     {
         "category": "pizza",
         "list":[
-            {"name": "Mussareza","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
-            {"name": "Portuguesa","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Calabresa","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Calabresa com catupiry","price": 2000, "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
-            {"name": "Marguerita","price": 2000, "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Pepperoni","price": 2000, "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+            {"name": "Mussarela","price": 45.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/1049620/pexels-photo-1049620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
+            {"name": "Portuguesa","price": 53.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
+            {"name": "Calabresa","price": 40.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Calabresa com catupiry","price": 52.89, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3644/pizza-restaurant-dinner-lunch.jpg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Marguerita","price": 39.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Pepperoni","price": 46.59, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
         ]
     },
     {
         "category": "drink",
         "list": [
-            {"name": "Refrigerante","price": 2000, "img": "https://images.pexels.com/photos/2668308/pexels-photo-2668308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
-            {"name": "Refrigerante","price": 2000, "img": "https://images.pexels.com/photos/764370/pexels-photo-764370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"name": "Refrigerante","price": 2000, "img": "https://images.pexels.com/photos/8679058/pexels-photo-8679058.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
+            {"name": "Coca Cola","price": 5.49,"description": "400ml", "img": "https://images.pexels.com/photos/2668308/pexels-photo-2668308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
+            {"name": "Soda","price": 7.50,"description": "250ml", "img": "https://images.pexels.com/photos/764370/pexels-photo-764370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
+            {"name": "Limonada","price": 6.89,"description": "500ml", "img": "https://images.pexels.com/photos/8679058/pexels-photo-8679058.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
         ]
     },
     {
         "category":"dessert",
         "list": [
-            {"name": "Doce","price": 2000, "img": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},
-            {"name": "Doce","price": 2000, "img": "https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
-            {"name": "Doce","price": 2000, "img": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"} 
+            {"name": "Brownie","price": 5.49, "img": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},
+            {"name": "Rosquinha","price": 3.80, "img": "https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
+            {"name": "Mousse Laranja","price": 8.99, "description": "", "img": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"}, 
+            {"name": "Pipoca","price": 7.99, "img": "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&h=650&w=940"} 
         ]
     },
     {

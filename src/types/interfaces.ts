@@ -53,6 +53,7 @@ export interface iProducts {
 export interface iListProducts {
     name: string,
     price: number,
-    img: string
+    img: string,
+    description: string
 }
  
