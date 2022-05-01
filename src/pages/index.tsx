@@ -51,7 +51,7 @@ const Home: NextPage<iHome> = ( {productsData} ) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const productsData:Array<iProducts> = Products
+  const productsData:any = Products
 
   return { props: { productsData } }
 }
