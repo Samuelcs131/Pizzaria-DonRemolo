@@ -33,6 +33,9 @@ const CardProduct = ({ products }:iCardProduct): JSX.Element => {
                             <path d="M6.28571 11.5714V6.28571M6.28571 6.28571V1M6.28571 6.28571H11.5714M6.28571 6.28571H1" stroke="#AEAEAE" strokeWidth="2" strokeLinecap="round"/>
                             </svg>
                     </button>
+                    <button className="btn-favorite">
+                        <svg viewBox="0 0 24 24" width="34" height="34" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </button>
                 </div>
             </div>
         )}))

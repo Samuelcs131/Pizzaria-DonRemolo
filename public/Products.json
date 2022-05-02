@@ -30,9 +30,10 @@
     {
         "category":"empanada",
         "list": [
-            {"name": "Empanada","price": 2000, "img": "https://images.pexels.com/photos/8279712/pexels-photo-8279712.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
-            {"name": "Empanada","price": 2000, "img": "https://images.pexels.com/photos/5881022/pexels-photo-5881022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
-            {"name": "Sanduiche","price": 2000, "img": "https://images.pexels.com/photos/7499298/pexels-photo-7499298.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"} 
+            {"name": "Empanada de carne","price": 17.89,"description": "Porção com 7 unidades", "img": "https://images.pexels.com/photos/5881022/pexels-photo-5881022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
+            {"name": "Sanduiche de frango","price": 5.49,"description": "Frango, com fatia de queijo cheddar derretido e alface", "img": "https://images.pexels.com/photos/7499298/pexels-photo-7499298.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"}, 
+            {"name": "Coxinha de frango","price": 25.69, "description": "Porção com 10 unidades", "img": "https://images.pexels.com/photos/4842865/pexels-photo-4842865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
+            {"name": "Hamburguer","price": 12.79,"description": "Carne, alface e cebola, com fatia de queijo prato derretido e tomate", "img": "https://images.pexels.com/photos/5609525/pexels-photo-5609525.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"} 
         ]
     }
 ]

@@ -33,8 +33,7 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
         img{
             height: 160px;
             width: 100%;
-            object-fit: cover;
-            flex-shrink: 0;
+            object-fit: cover; 
             transition: transform .3s;
             user-select: none;
 
@@ -47,7 +46,10 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
         .info-card{
             position: relative;
             padding: 13px;
-            //height: 100%;
+            flex-shrink: 100;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
             
             .name-product-card{
                 font-weight: 500;
@@ -60,18 +62,20 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
                 font-weight: 300;
                 color: ${({theme})=>theme.text.secundary};
                 margin: 5px 0;
+                height: 100%;
             }
 
-            .price-card{
+            .price-card{ 
                 font-weight: 600;
                 font-size: 16px;
-                color: ${({colorMain})=>colorMain}; 
+                color: ${({colorMain})=>colorMain};
                 b{
                     font-weight: 600;
                     font-size: 12px;
                 }
             }
             
+            // ICONS CARD
             .btn-add{
                 position: absolute;
                 right: 10px;
@@ -81,20 +85,50 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
                 height: 35px;
                 border-radius: 13px;
                 cursor: pointer;
-                transition: .2s background-color;
+                transition: .3s background-color;
                 svg path{
                     stroke: ${({theme})=>theme.text.secundary};
                 }
 
                 &:hover{
                     background-color: ${({theme})=>theme.text.primary};;
-                    transition: .2s background-color;
+                    transition: .3s background-color;
                     border-color: ${({theme})=>theme.background.secundary};;
                     svg path{
                         stroke: ${({theme})=>theme.background.secundary};
                     }
                 }
                 
+            }
+
+            .btn-favorite{
+                position: absolute;
+                right: 10px;
+                top: -150px;
+                background-color: white;
+                border-radius: 50%;
+                width: 34px;
+                height: 34px;
+                display: grid;
+                place-items: center;
+                box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+
+                svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: rgba(0,0,0,0.5);
+                    transition: .3s;
+
+                    cursor: pointer;
+                    path {
+                        stroke: transparent;
+                    }
+
+                    &:hover{
+                        fill: red;
+                        transition: .3s;
+                    }
+                }
             }
         }
 
