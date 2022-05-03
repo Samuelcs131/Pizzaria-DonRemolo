@@ -74,9 +74,24 @@ export const ContainerCart = styled.div<iIconCart>`
         .products-container{
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
             gap: 20px;
             height: 100%;
+            overflow-y: auto;
+            padding-right: 10px;
+            margin-bottom: 5px;
+
+                /* SCROLL */
+                ::-webkit-scrollbar{
+                    width: 8px;
+                }
+                ::-webkit-scrollbar-track{
+                    background-color: transparent;
+                }
+
+                ::-webkit-scrollbar-thumb{
+                    background-color: ${({theme})=>theme.text.secundary};
+                    border-radius: 5px;
+                }
 
             .product-cart{
                 height: 135px;

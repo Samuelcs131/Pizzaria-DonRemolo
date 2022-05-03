@@ -1,15 +1,18 @@
 /* GLOBAL STATE ----------------------------------- */
 export interface iGlobalState {
     themePage?: iThemePage,
-    cart?: Array<iCart>,
+    cart?: Array<iCart>, 
+    favoriteProducts?: Array<iCart>
 }
 export interface iThemePage {
     theme?: string, 
     colorMain?: string
 }
 export interface iCart {
-    product?: string,
+    id?: string,
+    name?: string,
     price?: number,
+    img?: string
 }
 export interface iDataContext {
     state: iGlobalState,
@@ -18,7 +21,8 @@ export interface iDataContext {
 /* COLOR PALLET ----------------------------------- */
 export interface iThemeColor {
     background: iThemeBackgroundColor,
-    text: iThemeTextColor
+    text: iThemeTextColor,
+    color: iThemeColors
 }
 export interface iThemeTextColor {
     primary: string,
@@ -28,6 +32,9 @@ export interface iThemeBackgroundColor {
     primary: string,
     secundary: string,
     tertiary: string
+}
+export interface iThemeColors{
+    sunsetOrange: string;
 }
 /* COMPONENTS ----------------------------------- */
 export interface iCardProduct {
@@ -51,6 +58,7 @@ export interface iProducts {
     list: Array<iListProducts>
 }
 export interface iListProducts {
+    id: string,
     name: string,
     price: number,
     img: string,

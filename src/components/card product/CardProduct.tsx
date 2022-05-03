@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { DataContext } from "../../store/GlobalState";
-import { iListProducts } from "../../types/interfaces";
+import { iDataContext, iListProducts } from "../../types/interfaces";
 import { ContainerCardProduct } from "./CardProduct-styled";
 
 interface iCardProduct  {
@@ -9,10 +9,22 @@ interface iCardProduct  {
 
 const CardProduct = ({ products }:iCardProduct): JSX.Element => {
 
-    const { state } = useContext(DataContext)
+    const { state, dispatch } = useContext(DataContext)
 
-    //console.log(products)
- 
+    function addProductToCart(product: iListProducts){
+        dispatch({type:'cart', payload: [
+            ... state.cart, {id: product.id, name: product.name, price: product.price, img: product.img},
+        ]
+        })
+    }
+
+    function favoriteProduct(product: iListProducts){
+        dispatch({type:'favoriteProducts', payload: [
+            ... state.favoriteProducts, {id: product.id, name: product.name, price: product.price, img: product.img},
+        ]
+        })
+    }
+
     return(
     <ContainerCardProduct colorMain={state.themePage.colorMain}>
         {products.length !== 0 ? 
@@ -28,12 +40,13 @@ const CardProduct = ({ products }:iCardProduct): JSX.Element => {
                     <h4 className="name-product-card">{product.name}</h4>
                     <h4 className="info-product">{product.description}</h4>
                     <p className="price-card">{moneyFull.split(',')[0]}<b>,{moneyFull.split(',')[1]}</b></p>
-                    <button className="btn-add">
+                    <button className="btn-add" 
+                    onClick={()=>addProductToCart(product)}>
                         <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6.28571 11.5714V6.28571M6.28571 6.28571V1M6.28571 6.28571H11.5714M6.28571 6.28571H1" stroke="#AEAEAE" strokeWidth="2" strokeLinecap="round"/>
                             </svg>
                     </button>
-                    <button className="btn-favorite">
+                    <button onClick={()=>favoriteProduct(product)} className="btn-favorite">
                         <svg viewBox="0 0 24 24" width="34" height="34" stroke="currentColor" strokeWidth="1" fill="none" strokeLinecap="round" strokeLinejoin="round" className="css-i6dzq1"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                     </button>
                 </div>

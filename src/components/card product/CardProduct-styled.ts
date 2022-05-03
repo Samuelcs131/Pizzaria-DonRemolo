@@ -105,7 +105,7 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
                 position: absolute;
                 right: 10px;
                 top: -150px;
-                background-color: white;
+                background-color: ${({theme})=>theme.background.secundary};
                 border-radius: 50%;
                 width: 34px;
                 height: 34px;
@@ -116,7 +116,7 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
                 svg {
                     width: 24px;
                     height: 24px;
-                    fill: rgba(0,0,0,0.5);
+                    fill: ${({theme})=>theme.text.secundary};
                     transition: .3s;
 
                     cursor: pointer;
@@ -125,7 +125,7 @@ export const ContainerCardProduct = styled.div<iCardProduct>`
                     }
 
                     &:hover{
-                        fill: red;
+                        fill: ${({theme})=>theme.color.sunsetOrange};
                         transition: .3s;
                     }
                 }

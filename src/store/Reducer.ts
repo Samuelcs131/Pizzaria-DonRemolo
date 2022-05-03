@@ -4,6 +4,7 @@ import { iCart, iGlobalState, iThemePage } from "../types/interfaces";
 type tActions = 
 | { type: 'theme', payload: iThemePage } 
 | { type: 'cart', payload: Array<iCart> }
+| { type: 'favoriteProducts', payload: Array<iCart> }
 
 // state: estado anterior, action: uma ação
 export const reducer = (state: iGlobalState, action: tActions): any => {
@@ -17,6 +18,10 @@ export const reducer = (state: iGlobalState, action: tActions): any => {
         // CART
         case 'cart':
         return { ...state, cart: action.payload };
+
+        // FAVORITE PRODUCTS
+        case 'favoriteProducts':
+        return { ...state, favoriteProducts: action.payload };
 
         // DEFAULT
         default:

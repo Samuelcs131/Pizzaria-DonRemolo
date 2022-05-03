@@ -12,7 +12,10 @@ export const themeLight: iThemeColor = {
     text: {
         primary: '#353535',
         secundary: '#A6A6A6'
-    } 
+    },
+    color:{
+        sunsetOrange: '#FF4E4E',
+    }
 }
 
 export const themeDark: iThemeColor = { 
@@ -26,5 +29,8 @@ export const themeDark: iThemeColor = {
     text: {
         primary: '#e1e1e1',
         secundary: '#aaa'
+    },
+    color:{
+       sunsetOrange: '#FE2525',
     }
 }
