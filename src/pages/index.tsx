@@ -9,21 +9,24 @@ import Search from '../components/search/Search'
 import { Header } from '../styles/Header'
 import { TitleAndText } from '../styles/TitleAndText'
 import Products from '../../public/Products.json'
-import { iListProducts, iProducts } from '../types/interfaces' 
+import { iProduct } from '../types/interfaces' 
 
 
 interface iHome {
-  productsData: Array<iProducts>
+  productsData: Array<iProduct>
 }
 
 const Home: NextPage<iHome> = ( {productsData} ) => {
 
+  
   const [searchData, setSearchData] = useState<string>('');
   const [selectCategory, setSelectCategory] = useState<string>('pizza');
-
-  const category:Array<iListProducts> = productsData.filter( (item)=> item.category === selectCategory )[0].list
-
-  const products:Array<iListProducts> = category.filter( (item)=> (item.name).toLowerCase().includes(searchData))
+  
+  const category:Array<iProduct> = productsData.filter( (item: iProduct)=>{
+    return item.category === selectCategory
+  })
+  
+  const products:Array<iProduct> = category.filter( (item)=> (item.name).toLowerCase().includes(searchData))
 
   return (
     <>
@@ -51,7 +54,7 @@ const Home: NextPage<iHome> = ( {productsData} ) => {
 
 export const getStaticProps: GetStaticProps = async () => {
 
-  const productsData:any = Products
+  const productsData:Array<iProduct> = Products
 
   return { props: { productsData } }
 }

@@ -1,40 +1,24 @@
-[
-    {
-        "category": "pizza",
-        "list":[
-            {"id": "s321d12s","name": "Mussarela","price": 45.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/1049620/pexels-photo-1049620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
-            {"id": "das1232d","name": "Portuguesa","price": 53.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940"},
-            {"id": "sad12681f","name": "Calabresa","price": 40.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"id": "312daws6d1","name": "Calabresa com catupiry","price": 52.89, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3644/pizza-restaurant-dinner-lunch.jpg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"id": "sad121d56","name": "Marguerita","price": 39.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"id": "5s8191sa5","name": "Pepperoni","price": 46.59, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
-        ]
-    },
-    {
-        "category": "drink",
-        "list": [
-            {"id": "sd432818sa6","name": "Coca Cola","price": 5.49,"description": "400ml", "img": "https://images.pexels.com/photos/2668308/pexels-photo-2668308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
-            {"id": "xz7123xg8s","name": "Soda","price": 7.50,"description": "250ml", "img": "https://images.pexels.com/photos/764370/pexels-photo-764370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"},
-            {"id": "16189za4s","name": "Limonada","price": 6.89,"description": "500ml", "img": "https://images.pexels.com/photos/8679058/pexels-photo-8679058.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"}
-        ]
-    },
-    {
-        "category":"dessert",
-        "list": [
-            {"id": "611623saz3","name": "Brownie","price": 5.49,"description": "100mg", "img": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"},
-            {"id": "sj1d19821sa","name": "Rosquinha","price": 3.80,"description": "90mg", "img": "https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
-            {"id": "f8gb5927yt","name": "Mousse Laranja","price": 8.99, "description": "200ml", "img": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"}, 
-            {"id": "0mnsdjoe09","name": "Pipoca","price": 7.99,"description": "400ml", "img": "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&h=650&w=940"} 
-        ]
-    },
-    {
-        "category":"empanada",
-        "list": [
-            {"id": "87s63sa6gre1","name": "Empanada de carne","price": 17.89,"description": "Porção com 7 unidades", "img": "https://images.pexels.com/photos/5881022/pexels-photo-5881022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"},
-            {"id": "8d412pdbs","name": "Sanduiche de frango","price": 5.49,"description": "Frango, com fatia de queijo cheddar derretido e alface", "img": "https://images.pexels.com/photos/7499298/pexels-photo-7499298.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"}, 
-            {"id": "997sajm12","name": "Coxinha de frango","price": 25.69, "description": "Porção com 10 unidades", "img": "https://images.pexels.com/photos/4842865/pexels-photo-4842865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"},
-            {"id": "ihd78932mds","name": "Hamburguer","price": 12.79,"description": "Carne, alface e cebola, com fatia de queijo prato derretido e tomate", "img": "https://images.pexels.com/photos/5609525/pexels-photo-5609525.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"} 
-        ]
-    }
+[ 
+            {"id": "s321d12s","name": "Mussarela","price": 45.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/1049620/pexels-photo-1049620.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "category": "pizza"},
+            {"id": "das1232d","name": "Portuguesa","price": 53.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/1146760/pexels-photo-1146760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650w=940", "category": "pizza"},
+            {"id": "sad12681f","name": "Calabresa","price": 40.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "category": "pizza"},
+            {"id": "312daws6d1","name": "Calabresa com catupiry","price": 52.89, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3644/pizza-restaurant-dinner-lunch.jpg?auto=compress&cs=tinysrgb&h=650&w=940", "category": "pizza"},
+            {"id": "sad121d56","name": "Marguerita","price": 39.99, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/845811/pexels-photo-845811.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "category": "pizza"},
+            {"id": "5s8191sa5","name": "Pepperoni","price": 46.59, "description": "Massa artesanal com molho da casa com Borda, muçarela, frango desfiado e Catupiry", "img": "https://images.pexels.com/photos/3682837/pexels-photo-3682837.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "category": "pizza"},
+ 
+            {"id": "sd432818sa6","name": "Coca Cola","price": 5.49,"description": "400ml", "img": "https://images.pexels.com/photos/2668308/pexels-photo-2668308.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "category": "drink"},
+            {"id": "xz7123xg8s","name": "Soda","price": 7.50,"description": "250ml", "img": "https://images.pexels.com/photos/764370/pexels-photo-764370.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "category": "drink"},
+            {"id": "16189za4s","name": "Limonada","price": 6.89,"description": "500ml", "img": "https://images.pexels.com/photos/8679058/pexels-photo-8679058.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "category": "drink"},
+    
+            {"id": "611623saz3","name": "Brownie","price": 5.49,"description": "100mg", "img": "https://images.pexels.com/photos/3026804/pexels-photo-3026804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "category":"dessert"},
+            {"id": "sj1d19821sa","name": "Rosquinha","price": 3.80,"description": "90mg", "img": "https://images.pexels.com/photos/3784440/pexels-photo-3784440.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "category":"dessert"},
+            {"id": "f8gb5927yt","name": "Mousse Laranja","price": 8.99, "description": "200ml", "img": "https://images.pexels.com/photos/3026801/pexels-photo-3026801.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "category":"dessert"}, 
+            {"id": "0mnsdjoe09","name": "Pipoca","price": 7.99,"description": "400ml", "img": "https://images.pexels.com/photos/33129/popcorn-movie-party-entertainment.jpg?auto=compress&cs=tinysrgb&h=650&w=940", "category":"dessert"},
+ 
+            {"id": "87s63sa6gre1","name": "Empanada de carne","price": 17.89,"description": "Porção com 7 unidades", "img": "https://images.pexels.com/photos/5881022/pexels-photo-5881022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "category":"empanada"},
+            {"id": "8d412pdbs","name": "Sanduiche de frango","price": 5.49,"description": "Frango, com fatia de queijo cheddar derretido e alface", "img": "https://images.pexels.com/photos/7499298/pexels-photo-7499298.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "category":"empanada"}, 
+            {"id": "997sajm12","name": "Coxinha de frango","price": 25.69, "description": "Porção com 10 unidades", "img": "https://images.pexels.com/photos/4842865/pexels-photo-4842865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", "category":"empanada"},
+            {"id": "ihd78932mds","name": "Hamburguer","price": 12.79,"description": "Carne, alface e cebola, com fatia de queijo prato derretido e tomate", "img": "https://images.pexels.com/photos/5609525/pexels-photo-5609525.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260", "category":"empanada"} 
+ 
 ]
 

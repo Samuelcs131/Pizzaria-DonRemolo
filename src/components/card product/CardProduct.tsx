@@ -1,24 +1,24 @@
 import { useContext } from "react";
 import { DataContext } from "../../store/GlobalState";
-import { iDataContext, iListProducts } from "../../types/interfaces";
+import { iCart, iDataContext, iProduct } from "../../types/interfaces";
 import { ContainerCardProduct } from "./CardProduct-styled";
 
 interface iCardProduct  {
-    products: Array<iListProducts>
+    products: Array<iProduct>
 }
 
 const CardProduct = ({ products }:iCardProduct): JSX.Element => {
 
     const { state, dispatch } = useContext(DataContext)
 
-    function addProductToCart(product: iListProducts){
+    function addProductToCart(product: iProduct){
         dispatch({type:'cart', payload: [
             ... state.cart, {id: product.id, name: product.name, price: product.price, img: product.img},
         ]
         })
     }
 
-    function favoriteProduct(product: iListProducts){
+    function favoriteProduct(product: iProduct){
         dispatch({type:'favoriteProducts', payload: [
             ... state.favoriteProducts, {id: product.id, name: product.name, price: product.price, img: product.img},
         ]
@@ -28,7 +28,7 @@ const CardProduct = ({ products }:iCardProduct): JSX.Element => {
     return(
     <ContainerCardProduct colorMain={state.themePage.colorMain}>
         {products.length !== 0 ? 
-        (products.map( (product: iListProducts, index:number) => {
+        (products.map( (product: iProduct, index:number) => {
         const moneyFull = (product.price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
          
         return(

@@ -9,10 +9,10 @@ export interface iThemePage {
     colorMain?: string
 }
 export interface iCart {
-    id?: string,
-    name?: string,
-    price?: number,
-    img?: string
+    id: string,
+    name: string,
+    price: number,
+    img: string
 }
 export interface iDataContext {
     state: iGlobalState,
@@ -53,15 +53,12 @@ export interface iGlobalStyle {
     theme: iThemeColor
 }
 /* DATA ----------------------------------- */
-export interface iProducts {
-    category: string,
-    list: Array<iListProducts>
-}
-export interface iListProducts {
+export interface iProduct {
     id: string,
     name: string,
     price: number,
     img: string,
-    description: string
+    description: string,
+    category: string
 }
  
